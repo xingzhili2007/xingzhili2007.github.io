@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+
+
+<html lang="cn">
+
+
+<head>
+  <meta charset="utf-8" />
+   
+  <meta name="keywords" content="xingz" />
+   
+  <meta name="description" content="XingzのBlog" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>
+    差分-学习经历与例题分享 |  XingzのBlog
+  </title>
+  <meta name="generator" content="hexo-theme-ayer">
+  
+  <link rel="shortcut icon" href="/favicon.ico" />
+  
+  
+<link rel="stylesheet" href="/dist/main.css">
+
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+  
+  
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+  
+  
+
+  
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?d1c961d0310ef4df73f0d8d7dfe28f42";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+<link rel="alternate" href="/atom.xml" title="Xingzhi's Blog" type="application/atom+xml">
+</head>
+
+</html>
+
+<body>
+  <div id="app">
+    
+      
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+      
+    <main class="content on">
+      <section class="outer">
+  <article
+  id="post-chafen"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  差分-学习经历与例题分享
+</h1>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/chafen/" class="article-date">
+  <time datetime="2021-04-16T14:33:15.000Z" itemprop="datePublished">2021-04-16</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">348</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">1 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
+  
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="差分-学习经历与例题分享"><a href="#差分-学习经历与例题分享" class="headerlink" title="差分-学习经历与例题分享"></a>差分-学习经历与例题分享</h1><p>我是从这里学习到差分的：</p>
+<a id="more"></a>
+
+<p>&nbsp;</p>
+<iframe src="https://blog.csdn.net/johnwayne0317/article/details/84928568" width="800" height="600"></iframe>
+
+<h2 id="No-1-语文成绩"><a href="#No-1-语文成绩" class="headerlink" title="No.1 语文成绩;"></a>No.1 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P2367">语文成绩;</a></h2><h2 id="题目背景"><a href="#题目背景" class="headerlink" title="题目背景"></a>题目背景</h2><p>&nbsp;</p>
+<p>语文考试结束了，成绩还是一如既往地有问题。</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><div class="marked" data-v-5a58a989="" data-v-4b38bb56="">
+
+<p>语文老师总是写错成绩，所以当她修改成绩的时候，总是累得不行。她总是要一遍遍地给某些同学增加分数，又要注意最低分是多少。你能帮帮她吗？</p>
+<p>//这又跟神器有什么关系呢？神说：呵呵。</p>
+<p>//因为n和p的范围比较大 建议C++选手使用scanf读入.</p>
+<p>//同时建议写读入优化….</p>
+<p>//最后一个点，亲测pas读入800+ms，c/C++的scanf 1200+ms，所以这个点的时限改为2s</p>
+</div>
+
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><div class="marked" data-v-5a58a989="" data-v-4b38bb56="">
+
+<p>第一行有两个整数n，p，代表学生数与增加分数的次数。</p>
+<p>第二行有n个数，a1~an，代表各个学生的初始成绩。</p>
+<p>接下来p行，每行有三个数，x，y，z，代表给第x个到第y个学生每人增加z分。</p>
+</div>
+
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><div class="marked" data-v-5a58a989="" data-v-4b38bb56="">
+
+<p>输出仅一行，代表更改分数后，全班的最低分。</p>
+</div>
+
+<h2 id="输入输出样例"><a href="#输入输出样例" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><div class="sample-wrap sample" data-v-36768c72="" data-v-4b38bb56="">
+<div class="input" data-v-52f2d52f="" data-v-36768c72="">
+
+<p><strong>输入 #1</strong></p>
+<pre data-v-52f2d52f="">3 2
+1 1 1
+1 2 1
+2 3 1</pre>
+</div>
+<div class="output" data-v-52f2d52f="" data-v-36768c72="">
+
+<p><strong>输出 #1</strong></p>
+<pre data-v-52f2d52f="">2
+</pre>
+</div>
+</div>
+
+<h2 id="说明-提示"><a href="#说明-提示" class="headerlink" title="说明/提示"></a>说明/提示</h2><div class="marked" data-v-5a58a989="" data-v-4b38bb56="">
+> 对于40%的数据，有n<=1000
+> 
+> 对于60%的数据，有n<=10000
+> 
+> 对于80%的数据，有n<=100000
+> 
+> 对于100%的数据，有n<=5000000，p<=n，学生初始成绩<=100，z<=100
+&nbsp;
+
+</div>
+&nbsp;
+
+<h3 id="Code："><a href="#Code：" class="headerlink" title="Code："></a>Code：</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN=<span class="number">5000010</span>; </span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span>    cf[MAXN],<span class="comment">//差分数组 </span></span><br><span class="line">        n,<span class="comment">//学生数 </span></span><br><span class="line">        p;<span class="comment">//加分次数 </span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc,<span class="keyword">const</span> <span class="keyword">char</span> * argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    ios::sync_with_stdio(<span class="literal">false</span>);</span><br><span class="line">    <span class="built_in">cin</span>.tie(<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">cout</span>.tie(<span class="number">0</span>);</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;n&gt;&gt;p;</span><br><span class="line">    <span class="keyword">int</span> last=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">    	<span class="keyword">int</span> in;</span><br><span class="line">    	<span class="built_in">cin</span>&gt;&gt;in;</span><br><span class="line">    	cf[i]=in-last;</span><br><span class="line">    	last=in;</span><br><span class="line">	&#125;</span><br><span class="line">    <span class="keyword">while</span>(p--) </span><br><span class="line">    &#123;</span><br><span class="line">    	<span class="keyword">int</span> x,y,z;<span class="comment">//代表给第x个到第y个学生每人增加z分</span></span><br><span class="line">        <span class="built_in">cin</span>&gt;&gt;x&gt;&gt;y&gt;&gt;z;</span><br><span class="line">        cf[x]+=z;</span><br><span class="line">        cf[y+<span class="number">1</span>]-=z;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> Min=<span class="number">2147483647</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">    	cf[i]+=cf[i<span class="number">-1</span>];</span><br><span class="line">    	Min=Min&lt;cf[i]?Min:cf[i];</span><br><span class="line">	&#125;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;Min&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="NO-2-积木大赛"><a href="#NO-2-积木大赛" class="headerlink" title="NO.2 积木大赛"></a>NO.2 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P1969">积木大赛</a></h2><blockquote>
+<p> 春春幼儿园举办了一年一度的“积木大赛”。今年比赛的内容是搭建一座宽度为<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">n</span></span></span></span>的大厦，大厦可以看成由n块宽度为1的积木组成，第i块积木的最终高度需要是<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord"><span class="mord mathdefault">h[</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i]</span></span></span><span class="vlist-s"></span></span></span></span></span></span></span></span>。</p>
+<p> 在搭建开始之前，没有任何积木（可以看成<span class="katex"><span class="katex-mathml">n</span><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">n</span></span></span></span>块高度为<span class="katex"><span class="katex-mathml">0</span><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord">0</span></span></span></span>的积木）。接下来每次操作，小朋友们可以选择一段连续区间<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mopen">[</span><span class="mord mathdefault">l</span><span class="mpunct">,</span><span class="mord mathdefault">r</span><span class="mclose">]</span></span></span></span>，然后将第第<span class="katex"><span class="katex-mathml">L</span></span>块到第 <span class="katex"><span class="katex-mathml">R</span></span> 块之间（含第<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">L</span></span></span></span> 块和第 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">R</span></span></span></span>块）所有积木的高度分别增加<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord">1</span></span></span></span>。</p>
+<p> 小<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">M</span></span></span></span>是个聪明的小朋友，她很快想出了建造大厦的最佳策略，使得建造所需的操作次数最少。但她不是一个勤于动手的孩子，所以想请你帮忙实现这个策略，并求出最少的操作次数。</p>
+ </div>
+
+<h2 id="输入格式-1"><a href="#输入格式-1" class="headerlink" title="输入格式"></a>输入格式</h2> <div class="marked" data-v-5a58a989="" data-v-4b38bb56="">
+
+<p> 包含两行，第一行包含一个整数<span class="katex"><span class="katex-mathml">n</span></span>，表示大厦的宽度。</p>
+<p> 第二行包含<span class="katex"><span class="katex-mathml">n</span></span>个整数，第i个整数为<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord"><span class="mord mathdefault">h[</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i]</span></span></span><span class="vlist-s"></span></span></span></span></span></span></span></span>。</p>
+ </div>
+
+<h2 id="输出格式-1"><a href="#输出格式-1" class="headerlink" title="输出格式"></a>输出格式</h2> <div class="marked" data-v-5a58a989="" data-v-4b38bb56="">
+
+<p> 建造所需的最少操作数。</p>
+ </div>
+
+<h2 id="输入输出样例-1"><a href="#输入输出样例-1" class="headerlink" title="输入输出样例"></a>输入输出样例</h2> <div class="sample-wrap sample" data-v-36768c72="" data-v-4b38bb56="">
+ <div class="input" data-v-52f2d52f="" data-v-36768c72="">
+
+<p> <strong>输入 #1</strong><br> <pre data-v-52f2d52f="">5<br> 2 3 4 1 2</pre><br> </div><br> <div class="output" data-v-52f2d52f="" data-v-36768c72=""></p>
+<p> <strong>输出 #1</strong><br> <pre data-v-52f2d52f="">5</pre><br> </div><br> </div></p>
+<h2 id="说明-提示-1"><a href="#说明-提示-1" class="headerlink" title="说明/提示"></a>说明/提示</h2> <div class="marked" data-v-5a58a989="" data-v-4b38bb56="">
+
+<p> 【样例解释】</p>
+<p> 其中一种可行的最佳方案，依次选择</p>
+<p> <span class="katex"><span class="katex-mathml">[1,5]</span><span class="katex-html" aria-hidden="true"><span class="base"><span class="mopen">[</span><span class="mord">1</span><span class="mpunct">,</span><span class="mord">5</span><span class="mclose">]</span></span></span></span> <span class="katex"><span class="katex-mathml">[1,3]</span><span class="katex-html" aria-hidden="true"><span class="base"><span class="mopen">[</span><span class="mord">1</span><span class="mpunct">,</span><span class="mord">3</span><span class="mclose">]</span></span></span></span> <span class="katex"><span class="katex-mathml">[2,3]</span><span class="katex-html" aria-hidden="true"><span class="base"><span class="mopen">[</span><span class="mord">2</span><span class="mpunct">,</span><span class="mord">3</span><span class="mclose">]</span></span></span></span> <span class="katex"><span class="katex-mathml">[3,3]</span><span class="katex-html" aria-hidden="true"><span class="base"><span class="mopen">[</span><span class="mord">3</span><span class="mpunct">,</span><span class="mord">3</span><span class="mclose">]</span></span></span></span> <span class="katex"><span class="katex-mathml">[5,5]</span><span class="katex-html" aria-hidden="true"><span class="base"><span class="mopen">[</span><span class="mord">5</span><span class="mpunct">,</span><span class="mord">5</span><span class="mclose">]</span></span></span></span></p>
+<p> 【数据范围】</p>
+<p> 对于<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord">3</span><span class="mord">0</span><span class="mord">%</span></span></span></span>的数据，有<span class="katex"><span class="katex-mathml">1 ≤ n ≤ 10</span></span></p>
+<p> 对于 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord">7</span><span class="mord">0</span><span class="mord">%</span></span></span></span>的数据，有<span class="katex"><span class="katex-mathml">1 ≤ n ≤ 1000</span></span></p>
+<p> 对于 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mord">%</span></span></span></span>的数据，有<span class="katex"><span class="katex-mathml">1 ≤ n ≤ 100000,0 ≤ h[i]≤ 10000</span></span></p>
+ </div>
+</blockquote>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> n,h[<span class="number">100005</span>],ans;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc,<span class="keyword">const</span> <span class="keyword">char</span> * argv[])</span></span>&#123;</span><br><span class="line">	ios::sync_with_stdio(<span class="literal">false</span>);</span><br><span class="line">	<span class="built_in">cin</span>.tie(<span class="number">0</span>);</span><br><span class="line">	<span class="built_in">cout</span>.tie(<span class="number">0</span>);</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) <span class="built_in">cin</span>&gt;&gt;h[i];</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++) <span class="keyword">if</span>(h[i]&gt;h[i<span class="number">-1</span>]) ans+=h[i]-h[i<span class="number">-1</span>];</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="No-3-地毯"><a href="#No-3-地毯" class="headerlink" title="No.3 地毯"></a>No.3 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P3397">地毯</a></h2><h2 id="题目背景-1"><a href="#题目背景-1" class="headerlink" title="题目背景"></a>题目背景</h2><div class="marked" data-v-5a58a989="" data-v-4b38bb56="">
+
+<p>此题约为NOIP提高组Day2T1难度。</p>
+</div>
+
+<h2 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h2><div class="marked" data-v-5a58a989="" data-v-4b38bb56="">
+
+<p>在 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">n</span><span class="mbin">×</span></span><span class="base"><span class="mord mathdefault">n</span></span></span></span> 的格子上有 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">m</span></span></span></span> 个地毯。</p>
+<p>给出这些地毯的信息，问每个点被多少个地毯覆盖。</p>
+</div>
+
+<h2 id="输入格式-2"><a href="#输入格式-2" class="headerlink" title="输入格式"></a>输入格式</h2><div class="marked" data-v-5a58a989="" data-v-4b38bb56="">
+
+<p>第一行，两个正整数 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">n</span><span class="mpunct">,</span><span class="mord mathdefault">m</span></span></span></span>。意义如题所述。</p>
+<p>接下来 <span class="katex"><span class="katex-mathml">mm</span><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">m</span></span></span></span> 行，每行两个坐标<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span><span class="vlist-s"></span></span></span></span></span><span class="mpunct">,</span><span class="mord"><span class="mord mathdefault">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span><span class="vlist-s"></span></span></span></span></span><span class="mclose">)</span></span></span></span> 和 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span><span class="vlist-s"></span></span></span></span></span><span class="mpunct">,</span><span class="mord"><span class="mord mathdefault">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span><span class="vlist-s"></span></span></span></span></span><span class="mclose">)</span></span></span></span>，代表一块地毯，左上角是 <span class="katex"><span class="katex-mathml">(x1,y1)</span></span>，右下角是 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span><span class="vlist-s"></span></span></span></span></span><span class="mpunct">,</span><span class="mord"><span class="mord mathdefault">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist"><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span><span class="vlist-s"></span></span></span></span></span><span class="mclose">)</span></span></span></span>。</p>
+</div>
+
+<h2 id="输出格式-2"><a href="#输出格式-2" class="headerlink" title="输出格式"></a>输出格式</h2><div class="marked" data-v-5a58a989="" data-v-4b38bb56="">
+
+<p>输出 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">n</span></span></span></span> 行，每行 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">n</span></span></span></span> 个正整数。</p>
+<p>第 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">i</span></span></span></span> 行第 <span class="katex"><span class="katex-mathml">j</span></span> 列的正整数表示 <span class="katex"><span class="katex-mathml">(i,j)</span></span>这个格子被多少个地毯覆盖。</p>
+</div>
+
+<h2 id="输入输出样例-2"><a href="#输入输出样例-2" class="headerlink" title="输入输出样例"></a>输入输出样例</h2><div class="sample-wrap sample" data-v-36768c72="" data-v-4b38bb56="">
+<div class="input" data-v-52f2d52f="" data-v-36768c72="">**输入 #1**</div>
+</div>
+<div class="input" data-v-52f2d52f="" data-v-36768c72="">
+<pre data-v-52f2d52f="">5 3
+2 2 3 3
+3 3 5 5
+1 2 1 4</pre>
+</div>
+<div class="output" data-v-52f2d52f="" data-v-36768c72="">**输出 #1**</div>
+<div class="sample-wrap sample" data-v-36768c72="" data-v-4b38bb56="">
+<div class="output" data-v-52f2d52f="" data-v-36768c72="">
+<pre data-v-52f2d52f="">0 1 1 1 0
+0 1 1 0 0
+0 1 2 1 1
+0 0 1 1 1
+0 0 1 1 1</pre>
+</div>
+</div>
+<div class="marked" data-v-5a58a989="" data-v-4b38bb56="">
+
+<hr>
+<h3 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h3><p>对于 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord">2</span><span class="mord">0</span><span class="mord">%</span></span></span></span> 的数据，有 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">n</span><span class="mrel">≤</span></span><span class="base"><span class="mord">5</span><span class="mord">0</span></span></span></span>，<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">m</span><span class="mrel">≤</span></span><span class="base"><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span></span></span></span>。</p>
+<p>对于 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mord">%</span></span></span></span> 的数据，有 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">n</span><span class="mpunct">,</span><span class="mord mathdefault">m</span><span class="mrel">≤</span></span><span class="base"><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mord">0</span></span></span></span>。</p>
+<hr>
+<p><span style="color: #ff0000;">思路：在输入的矩形范围每行最左，右端加减铺上的地毯个数</span></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n,m,a,b,c,d;</span><br><span class="line"><span class="keyword">int</span> mp[<span class="number">1001</span>][<span class="number">1001</span>]; </span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc,<span class="keyword">const</span> <span class="keyword">char</span> * argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="built_in">cin</span>&gt;&gt;n&gt;&gt;m;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;i++)&#123;</span><br><span class="line"><span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b&gt;&gt;c&gt;&gt;d;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> j=a;j&lt;=c;j++)</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> k=b;k&lt;=d;k++)</span><br><span class="line">mp[j][k]++;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=n;j++)</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;mp[i][j]&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line"><span class="built_in">cout</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;`</span><br></pre></td></tr></table></figure>
+
+
+
+
+<h2 id="No-4-USACO07JAN-Tallest-Cow-S"><a href="#No-4-USACO07JAN-Tallest-Cow-S" class="headerlink" title="No.4 [USACO07JAN]Tallest Cow S"></a>No.4 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P2879">[USACO07JAN]Tallest Cow S</a></h2><h3 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h3><p>FarmerJohn 有n头牛，它们按顺序排成一列。 FarmerJohn 只知道其中最高的奶牛的序号及它的高度，其他奶牛的高度都是未知的。现在 FarmerJohn 手上有<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">R</span></span></span></span>条信息，每条信息上有两头奶牛的序号（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">a</span></span></span></span>和<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">b</span></span></span></span>），其中<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">b</span></span></span></span>奶牛的高度一定大于等于<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">a</span></span></span></span>奶牛的高度，且<span class="katex"><span class="katex-mathml">a</span></span>，<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">b</span></span></span></span>之间的所有奶牛的高度都比<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">a</span></span></span></span>小。现在<span class="katex"><span class="katex-mathml">FarmerJohn</span></span>想让你根据这些信息求出每一头奶牛的可能的最大的高度。（数据保证有解）</p>
+<h3 id="输入格式："><a href="#输入格式：" class="headerlink" title="输入格式："></a>输入格式：</h3><p>第1行：四个以空格分隔的整数：<span class="katex"><span class="katex-mathml">n</span></span>，<span class="katex"><span class="katex-mathml">i</span></span>，<span class="katex"><span class="katex-mathml">h</span></span>和<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">R</span></span></span></span>（<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">n</span></span></span></span>和<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">R</span></span></span></span>意义见题面; <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">i</span></span></span></span> 和 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">h</span></span></span></span> 表示第 <span class="katex"><span class="katex-mathml">i</span><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">i</span></span></span></span> 头牛的高度为 <span class="katex"><span class="katex-mathml">h</span></span> ，他是最高的奶牛）</p>
+<p>接下来R行：两个不同的整数<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="mord mathdefault">a</span></span></span></span>和<span class="katex"><span class="katex-mathml">b</span></span>（1 ≤ <span class="katex"><span class="katex-mathml">a</span></span>，<span class="katex"><span class="katex-mathml">b</span></span> ≤ n）</p>
+<h3 id="输出格式："><a href="#输出格式：" class="headerlink" title="输出格式："></a>输出格式：</h3><p>一共n行，表示每头奶牛的最大可能高度.</p>
+<h3 id="数据范围："><a href="#数据范围：" class="headerlink" title="数据范围："></a>数据范围：</h3><p>(1 ≤ n ≤ 10000 ; 1 ≤ h ≤ 1000000 ; 0 ≤ R ≤ 10000)</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="built_in">map</span>&lt;<span class="built_in">pair</span>&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt;,<span class="keyword">bool</span>&gt; ex;</span><br><span class="line"><span class="keyword">int</span> c[<span class="number">10010</span>],d[<span class="number">10010</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n,p,h,m;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;n&gt;&gt;p&gt;&gt;h&gt;&gt;m;</span><br><span class="line">    <span class="keyword">while</span>(m--)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">int</span> a,b;</span><br><span class="line">        <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;</span><br><span class="line">        <span class="keyword">if</span>(a&gt;b) swap(a,b);</span><br><span class="line">        <span class="keyword">if</span>(ex[<span class="built_in">make_pair</span>(a,b)]) <span class="keyword">continue</span>;</span><br><span class="line">        d[a+<span class="number">1</span>]--,d[b]++;</span><br><span class="line">        ex[<span class="built_in">make_pair</span>(a,b)]=<span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        c[i]=c[i<span class="number">-1</span>]+d[i];</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;h+c[i]&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lxzblog.vercel.app/chafen/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B7%AE%E5%88%86/" rel="tag">差分</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li></ul>
+
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/school-reporter/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            我是小记者
+          
+        </div>
+      </a>
+    
+    
+      <a href="/marenbaodian/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">骂人宝典</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "usnKpCvTpLsJ952EJEW0UuoY-gzGzoHsz",
+    app_key: "Jg7KCffC90pBDwDm3HXXuSpX",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+     
+</article>
+
+</section>
+      <footer class="footer">
+  <div class="outer">
+    <ul>
+      <li>
+        Copyrights &copy;
+        2020-2021
+        <i class="ri-heart-fill heart_icon"></i> Xingzhi
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+        
+        
+        Powered by <a href="https://hexo.io" target="_blank">Hexo</a>
+        <span class="division">|</span>
+        Theme - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
+        
+      </li>
+    </ul>
+    <ul>
+      <li>
+        
+      </li>
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      
+    </ul>
+    <ul>
+      <li>
+        <!-- cnzz统计 -->
+        
+      </li>
+    </ul>
+  </div>
+</footer>
+      <div class="float_btns">
+        <div class="totop" id="totop">
+  <i class="ri-arrow-up-line"></i>
+</div>
+
+<div class="todark" id="todark">
+  <i class="ri-moon-line"></i>
+</div>
+
+      </div>
+    </main>
+    <aside class="sidebar on">
+      <button class="navbar-toggle"></button>
+<nav class="navbar">
+  
+  <div class="logo">
+    <a href="/"><img src="https://cdn.jsdelivr.net/gh/xingzhili2007/resources@master/PicGo/LXZ-blog_logo.png" alt="Xingzhi&#39;s Blog"></a>
+  </div>
+  
+  <ul class="nav nav-main">
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/">主页</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" href="/archives">归档</a>
+    </li>
+    
+    <li class="nav-item">
+      <a class="nav-item-link" target="_blank" rel="noopener" href="https://lxzblog.xjqxz.top/blog/">学习专用博客</a>
+    </li>
+    
+  </ul>
+</nav>
+<nav class="navbar navbar-bottom">
+  <ul class="nav">
+    <li class="nav-item">
+      
+      <a class="nav-item-link nav-item-search"  title="Search">
+        <i class="ri-search-line"></i>
+      </a>
+      
+      
+      <a class="nav-item-link" target="_blank" href="/atom.xml" title="RSS Feed">
+        <i class="ri-rss-line"></i>
+      </a>
+      
+    </li>
+  </ul>
+</nav>
+<div class="search-form-wrap">
+  <div class="local-search local-search-plugin">
+  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
+  <div id="local-search-result" class="local-search-result"></div>
+</div>
+</div>
+    </aside>
+    <script>
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        document.querySelector('.content').classList.remove('on');
+        document.querySelector('.sidebar').classList.remove('on');
+      }
+    </script>
+    <div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i>请我喝杯咖啡吧~</p>
+  <div class="reward-box">
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/alipay.jpg">
+      <span class="reward-type">支付宝</span>
+    </div>
+    
+    
+    <div class="reward-item">
+      <img class="reward-img" src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/wechat.jpg">
+      <span class="reward-type">微信</span>
+    </div>
+    
+  </div>
+</div>
+    
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+<script src="/js/lazyload.min.js"></script>
+
+<!-- Tocbot -->
+
+
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: 'main',
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto'
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+
+<script src="/dist/main.js"></script>
+
+<!-- ImageViewer -->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script>
+    function viewer_init() {
+        let pswpElement = document.querySelectorAll('.pswp')[0];
+        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
+
+        $imgArr.forEach(($em, i) => {
+            $em.onclick = () => {
+                // slider展开状态
+                // todo: 这样不好，后面改成状态
+                if (document.querySelector('.left-col.show')) return
+                let items = []
+                $imgArr.forEach(($em2, i2) => {
+                    let img = $em2.getAttribute('data-idx', i2)
+                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
+                    let title = $em2.getAttribute('alt')
+                    // 获得原图尺寸
+                    const image = new Image()
+                    image.src = src
+                    items.push({
+                        src: src,
+                        w: image.width || $em2.width,
+                        h: image.height || $em2.height,
+                        title: title
+                    })
+                })
+                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
+                    index: parseInt(i)
+                });
+                gallery.init()
+            }
+        })
+    }
+    viewer_init()
+</script>
+
+<!-- MathJax -->
+
+<!-- Katex -->
+
+<!-- busuanzi  -->
+
+<!-- ClickLove -->
+
+<!-- ClickBoom1 -->
+
+<!-- ClickBoom2 -->
+
+
+<script src="/js/clickBoom2.js"></script>
+
+
+<!-- CodeCopy -->
+
+
+<link rel="stylesheet" href="/css/clipboard.css">
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+  function wait(callback, seconds) {
+    var timelag = null;
+    timelag = window.setTimeout(callback, seconds);
+  }
+  !function (e, t, a) {
+    var initCopyCode = function(){
+      var copyHtml = '';
+      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
+      copyHtml += '</button>';
+      $(".highlight .code pre").before(copyHtml);
+      $(".article pre code").before(copyHtml);
+      var clipboard = new ClipboardJS('.btn-copy', {
+        target: function(trigger) {
+          return trigger.nextElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        let $btn = $(e.trigger);
+        $btn.addClass('copied');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-checkbox-circle-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPIED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-checkbox-circle-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+      clipboard.on('error', function(e) {
+        e.clearSelection();
+        let $btn = $(e.trigger);
+        $btn.addClass('copy-failed');
+        let $icon = $($btn.find('i'));
+        $icon.removeClass('ri-file-copy-2-line');
+        $icon.addClass('ri-time-line');
+        let $span = $($btn.find('span'));
+        $span[0].innerText = 'COPY FAILED';
+        
+        wait(function () { // 等待两秒钟后恢复
+          $icon.removeClass('ri-time-line');
+          $icon.addClass('ri-file-copy-2-line');
+          $span[0].innerText = 'COPY';
+        }, 2000);
+      });
+    }
+    initCopyCode();
+  }(window, document);
+</script>
+
+
+<!-- CanvasBackground -->
+
+
+<script src="/js/dz.js"></script>
+
+
+
+    
+  </div>
+</body>
+
+</html>
