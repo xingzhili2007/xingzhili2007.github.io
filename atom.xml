@@ -63,15 +63,12 @@
     <link href="https://blog.xingz.top/OBS-VCam/"/>
     <id>https://blog.xingz.top/OBS-VCam/</id>
     <published>2022-04-15T12:16:33.000Z</published>
-    <updated>2022-04-15T12:42:12.171Z</updated>
+    <updated>2022-04-15T12:43:34.731Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h3 id="OBS"><a href="#OBS" class="headerlink" title="OBS"></a><a href="https://baike.baidu.com/item/OBS/19974847">OBS</a></h3><p>Open Broadcaster Software是一个免费的开源的视频录制和视频实时流软件。其有多种功能并广泛使用在视频采集，直播等领域。</p><p>Open Broadcaster Software 它支持和包含以下功能： [1] </p><ol><li>支持<a href="https://baike.baidu.com/item/H264/7338504">H264</a>（X264）和 <a href="https://baike.baidu.com/item/AAC/382962">AAC</a> 编码。</li><li>支持Intel Quick Sync Video (QSV) 和 NVENC。</li><li>无限量的场景和视频源。</li><li>支持实时RTMP流推送至 Twitch，<a href="https://baike.baidu.com/item/YouTube/6497100">YouTube</a>，DailyMotion，Hitbox等平台。</li><li>支持 <a href="https://baike.baidu.com/item/MP4/9218018">MP4</a> 和 <a href="https://baike.baidu.com/item/FLV/6623513">FLV</a> 格式输出。</li><li>支持捕获基于 <a href="https://baike.baidu.com/item/GPU/105524">GPU</a> 的游戏捕获，并高性能的输出游戏视频流。</li><li>支持DirectShow 采集设备（Webcams，采集卡等）。</li><li>[Windows 8](<a href="https://baike.baidu.com/item/Windows">https://baike.baidu.com/item/Windows</a> 8/6851933) 高速监控采集支持。</li><li>双线性或lanczos3 重采样支持。</li></ol><h2 id="如何安装OBS并使用虚拟摄像头"><a href="#如何安装OBS并使用虚拟摄像头" class="headerlink" title="如何安装OBS并使用虚拟摄像头"></a>如何安装OBS并使用虚拟摄像头</h2><ul><li>进入官网<a href="https://obsproject.com/">https://obsproject.com</a></li><li>选择合适的版本下载安装<img src="https://cdn.jsdelivr.net/gh/xingzhili2007/resources@master/PicGo/202204152026842.png" alt="image-20220415202646786"></li><li>安装完成后打开<img src="https://cdn.jsdelivr.net/gh/xingzhili2007/resources@master/PicGo/202204152029350.png" alt="image-20220415202905307"></li><li>对场景进行配置<img src="https://cdn.jsdelivr.net/gh/xingzhili2007/resources@master/PicGo/202204152030062.png" alt="image-20220415203022022"></li><li>调整大小<img src="https://cdn.jsdelivr.net/gh/xingzhili2007/resources@master/PicGo/202204152032643.png" alt="image-20220415203209603"></li><li>可以加入多个源<img src="https://cdn.jsdelivr.net/gh/xingzhili2007/resources@master/PicGo/202204152034696.png" alt="image-20220415203459657"></li><li>调整好之后，启动虚拟摄像机<img src="https://cdn.jsdelivr.net/gh/xingzhili2007/resources@master/PicGo/202204152036522.png" alt="image-20220415203609477"></li><li>在网课/会议设置中调整摄像头为<code>OBS Virtual Camera</code><img src="https://cdn.jsdelivr.net/gh/xingzhili2007/resources@master/PicGo/202204152039678.png" alt="image-20220415203936630"></li></ul><h2 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h2><p>具体使用方法因人而异<del>（你懂的）</del></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h3 id="OBS"><a href="#OBS" class="headerlink" title="OBS"></a><a href="https://baike.baidu.com/item/OBS/19974847">OBS</a></h3><p>Open Broadcaster Software是一个免费的开源的视频录制和视频实时流软件。其有多种功能并广泛使用在视频采集，直播等领域。</p><a id="more"></a><p>Open Broadcaster Software 它支持和包含以下功能： [1] </p><ol><li>支持<a href="https://baike.baidu.com/item/H264/7338504">H264</a>（X264）和 <a href="https://baike.baidu.com/item/AAC/382962">AAC</a> 编码。</li><li>支持Intel Quick Sync Video (QSV) 和 NVENC。</li><li>无限量的场景和视频源。</li><li>支持实时RTMP流推送至 Twitch，<a href="https://baike.baidu.com/item/YouTube/6497100">YouTube</a>，DailyMotion，Hitbox等平台。</li><li>支持 <a href="https://baike.baidu.com/item/MP4/9218018">MP4</a> 和 <a href="https://baike.baidu.com/item/FLV/6623513">FLV</a> 格式输出。</li><li>支持捕获基于 <a href="https://baike.baidu.com/item/GPU/105524">GPU</a> 的游戏捕获，并高性能的输出游戏视频流。</li><li>支持DirectShow 采集设备（Webcams，采集卡等）。</li><li>[Windows 8](<a href="https://baike.baidu.com/item/Windows">https://baike.baidu.com/item/Windows</a> 8/6851933) 高速监控采集支持。</li><li>双线性或lanczos3 重采样支持。</li></ol><h2 id="如何安装OBS并使用虚拟摄像头"><a href="#如何安装OBS并使用虚拟摄像头" class="headerlink" title="如何安装OBS并使用虚拟摄像头"></a>如何安装OBS并使用虚拟摄像头</h2><ul><li>进入官网<a href="https://obsproject.com/">https://obsproject.com</a></li><li>选择合适的版本下载安装<img src="https://cdn.jsdelivr.net/gh/xingzhili2007/resources@master/PicGo/202204152026842.png" alt="image-20220415202646786"></li><li>安装完成后打开<img src="https://cdn.jsdelivr.net/gh/xingzhili2007/resources@master/PicGo/202204152029350.png" alt="image-20220415202905307"></li><li>对场景进行配置<img src="https://cdn.jsdelivr.net/gh/xingzhili2007/resources@master/PicGo/202204152030062.png" alt="image-20220415203022022"></li><li>调整大小<img src="https://cdn.jsdelivr.net/gh/xingzhili2007/resources@master/PicGo/202204152032643.png" alt="image-20220415203209603"></li><li>可以加入多个源<img src="https://cdn.jsdelivr.net/gh/xingzhili2007/resources@master/PicGo/202204152034696.png" alt="image-20220415203459657"></li><li>调整好之后，启动虚拟摄像机<img src="https://cdn.jsdelivr.net/gh/xingzhili2007/resources@master/PicGo/202204152036522.png" alt="image-20220415203609477"></li><li>在网课/会议设置中调整摄像头为<code>OBS Virtual Camera</code><img src="https://cdn.jsdelivr.net/gh/xingzhili2007/resources@master/PicGo/202204152039678.png" alt="image-20220415203936630"></li></ul><h2 id="后话"><a href="#后话" class="headerlink" title="后话"></a>后话</h2><p>具体使用方法因人而异<del>（你懂的）</del></p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;h3 id=&quot;OBS&quot;&gt;&lt;a href=&quot;#OBS&quot; class=&quot;headerlink&quot; title=&quot;OBS&quot;&gt;&lt;/a&gt;&lt;a href=&quot;h</summary>
-      
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;h3 id=&quot;OBS&quot;&gt;&lt;a href=&quot;#OBS&quot; class=&quot;headerlink&quot; title=&quot;OBS&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://baike.baidu.com/item/OBS/19974847&quot;&gt;OBS&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Open Broadcaster Software是一个免费的开源的视频录制和视频实时流软件。其有多种功能并广泛使用在视频采集，直播等领域。&lt;/p&gt;</summary>
     
     
     
@@ -279,11 +276,11 @@
     
     
     
-    <category term="感受" scheme="https://blog.xingz.top/tags/%E6%84%9F%E5%8F%97/"/>
-    
     <category term="童年" scheme="https://blog.xingz.top/tags/%E7%AB%A5%E5%B9%B4/"/>
     
     <category term="新闻" scheme="https://blog.xingz.top/tags/%E6%96%B0%E9%97%BB/"/>
+    
+    <category term="感受" scheme="https://blog.xingz.top/tags/%E6%84%9F%E5%8F%97/"/>
     
   </entry>
   
