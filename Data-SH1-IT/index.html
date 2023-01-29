@@ -88,7 +88,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">3.1k</span>
+            <span class="post-count">4.3k</span>
         </span>
     </span>
 
@@ -97,7 +97,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">13 min</span>
+            <span class="post-count">17 min</span>
         </span>
     </span>
 </div>
@@ -150,10 +150,15 @@ var _hmt = _hmt || [];
 <p>歌声是这样连续不断的声波=&gt;<strong>模拟信息</strong>：<br><img src="https://lxz-picture.oss-cn-shanghai.aliyuncs.com/img/202301281644079.png?x-oss-process=image/resize,p_80/format,webp/quality,q_80" alt="image-20230128164427037"></p>
 <p>但如果要存储到计算机的就必须这样变成一个一个点存储=&gt;<strong>数字信息</strong> ：<br><img src="https://lxz-picture.oss-cn-shanghai.aliyuncs.com/img/202301281644826.png?x-oss-process=image/resize,p_80/format,webp/quality,q_80" alt="image-20230128164453795"></p>
 <p>计算机中存储的音频信息大概是这样的</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1ns 114.5141918Hz 81dB</span><br><span class="line">2ns 200.7052100Hz 83dB</span><br><span class="line">3ns 2147.4836470Hz 88dB</span><br><span class="line">4ns ...</span><br><span class="line">5ns ...</span><br><span class="line">6ns ...</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">50µs 114.5141918Hz 81dB</span><br><span class="line">100µs 200.7052100Hz 83dB</span><br><span class="line">150µs 2147.4836470Hz 88dB</span><br><span class="line">200µs ...</span><br><span class="line">250µs ...</span><br><span class="line">300µs ...</span><br></pre></td></tr></table></figure>
 
-<p>在这个文本中把唱歌的连续声音切割成1nm的小段<br>每1ns记录一次声音的频率<code>x Hz</code>和响度<code>y dB</code>  【由模拟信息采样成数字<strong>信息</strong>=&gt;<code>时间</code> <code>频率</code> <code>响度</code>这些数值】<br>最后把这些文本转化成二进制<code>0</code>和<code>1</code>存储和传输。【转化为数字<strong>信号</strong>=&gt;[<code>0</code> 和<code>1</code>]  进行存储传输】<em>如何转化？<a href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BC%96%E7%A0%81">参考这里</a></em></p>
-<p>在播放时，计算机读取硬盘中的<code>0</code> <code>1</code> 信息【数字<strong>信号</strong>】<br>重新翻译成这个文本 【数字<strong>信息</strong>】<br>再根据文本中每1nm的频率<code>拟合成连续曲线</code>（就是物理上的<code>用平滑的曲线连起来</code>）【由数字<strong>信息</strong>拟合成模拟信息】<em>如何合成？<a href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BC%96%E7%A0%81">参考这里</a></em><br>再播放（不然直接播放声音就是断断续续的）【此时由于已经转换成模拟信号传输依旧可以被干扰】<br>就能基本上重现原来的音乐。<em>但不可能完整重现，因为在记录的过程中失去了<code>1ns-2ns</code>、<code>2ns-3ns</code>之间的数据（如文件中没有记录<code>1.1ns</code>时的频率和响度），只能通过<code>拟合成曲线</code>近似重现。</em><br>（所以想听无损音乐和看无损照片的话就去卖唱片和胶卷吧（🙃</p>
+<p>在这个文本中把唱歌的连续声音切割成50<strong>µs</strong>的小段</p>
+<p>每50<strong>µs</strong>记录一次声音的频率<code>x Hz</code>和响度<code>y dB</code>  【由模拟信息采样成数字<strong>信息</strong>=&gt;<code>时间</code> <code>频率</code> <code>响度</code>这些数值】</p>
+<p>最后把这些文本转化成二进制<code>0</code>和<code>1</code>存储和传输。【转化为数字<strong>信号</strong>=&gt;[<code>0</code> 和<code>1</code>]  进行存储传输】<em>如何转化？<a href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BC%96%E7%A0%81">参考这里</a></em></p>
+<p>在播放时，计算机读取硬盘中的<code>0</code> <code>1</code> 信息【数字<strong>信号</strong>】重新翻译成这个文本 【数字<strong>信息</strong>】<em>如何合成？<a href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E7%BC%96%E7%A0%81">参考这里</a></em></p>
+<p>再根据文本中记录的每50<strong>µs</strong>的频率<code>拟合成连续曲线</code>（就是物理上的<code>用平滑的曲线连起来</code>）【由数字<strong>信息</strong>拟合成模拟信息】</p>
+<p>再播放（不然直接播放声音就是断断续续的）【此时由于已经转换成模拟信号传输依旧可以被干扰】</p>
+<p>就能基本上重现原来的音乐。<em>但不可能完整重现（顶多让你听不出来有什么差别而已），因为在记录的过程中失去了50<strong>µs</strong>-100<strong>µs</strong><code>、</code>100<strong>µs</strong>-150<strong>µs</strong>之间的数据（如文件中没有记录70<strong>µs</strong>时的频率和响度），只能通过<code>拟合成曲线</code>近似重现。</em><br>（所以想听无损音乐和看无损照片的话就去卖唱片和胶卷吧（🙃</p>
 </blockquote>
 <p>既然模拟信号有如此优点，那么为什么还要使用数字信号呢？</p>
 <blockquote>
@@ -181,7 +186,7 @@ var _hmt = _hmt || [];
 <td><strong>技术复杂[需要从<code>0</code> <code>1</code>转换成数字信息]、成本高</strong></td>
 </tr>
 </tbody></table>
-<h3 id="数据的编码"><a href="#数据的编码" class="headerlink" title="数据的编码"></a>数据的编码</h3><h4 id="前提知识"><a href="#前提知识" class="headerlink" title="前提知识"></a>前提知识</h4><p>单独的<code>0</code> 、<code>1</code>  =&gt; 1<strong>位</strong>=1 bit(1<strong>b</strong>)</p>
+<h3 id="数据的编码"><a href="#数据的编码" class="headerlink" title="数据的编码"></a>数据的编码</h3><h4 id="前提知识"><a href="#前提知识" class="headerlink" title="前提知识"></a>前提知识</h4><p>二进制中，单独的<code>0</code> 、<code>1</code>  =&gt; 1<strong>位</strong>=1 bit(1<strong>b</strong>)</p>
 <p>8位一组<code>0110 0001</code>=&gt; 1<strong>字节</strong>=1bit(1<strong>B</strong>) <em>在最初的ASCII中用8位二进制表示一个字母/符号，因此被称作1字节</em></p>
 <blockquote>
 <p>$K=\times 1024$</p>
@@ -201,7 +206,8 @@ var _hmt = _hmt || [];
 <p>$1MB=1024\times1024B=1024KB=1024\times1024\times1024\times8b$</p>
 <p>$1Mb=1024\times1024b=1024Kb$</p>
 <p>$1MB=8Mb$</p>
-<p>**生活：商家在宣传时往往用网速1000Mb/s宣传，这里选用的是Mb而非人们常用的MB，由于1B=8b，所以实际速度1000Mb/s=1000/8=125MB/s。同理商家在售卖硬盘的时候会说这是500gB的硬盘而非人民常用的单位GB，小写的k、m、g之间的差是1000倍，而大些的K、M、G之间的差是1024倍，所以$500gB=500\times 1000\times 1000\times 1000B=\frac{500\times 1000\times 1000\times 1000}{1024\times 1024\times 1024}GB $ **</p>
+<p>$b(bit)\stackrel{\times8}{\longrightarrow}B\stackrel{\times1024}{\longrightarrow}KB\stackrel{\times1024}{\longrightarrow}MB\stackrel{\times1024}{\longrightarrow}GB\stackrel{\times1024}{\longrightarrow}TB$<br>$b\stackrel{\times1024}{\longrightarrow}Kb\stackrel{\times1024}{\longrightarrow}Mb\stackrel{\times1024}{\longrightarrow}Gb\stackrel{\times1024}{\longrightarrow}Tb$</p>
+<p>**生活：商家在宣传时往往用网速1000Mb/s宣传，这里选用的是Mb而非人们常用的MB，由于1B=8b，所以实际速度1000Mb/s=1000/8=125MB/s。同理商家在售卖硬盘的时候会说这是500gB的硬盘而非我们常用的单位GB，小写的k、m、g之间的差是1000倍，而大些的K、M、G之间的差是1024倍，所以$500gB=500\times 1000\times 1000\times 1000B=\frac{500\times 1000\times 1000\times 1000}{1024\times 1024\times 1024}GB $ **</p>
 <h4 id="文字"><a href="#文字" class="headerlink" title="文字"></a>文字</h4><blockquote>
 <p>如何将0和1这种数字信号转化成字母和数字方便人类读取？</p>
 <p>用<code>字典</code>的方式将每个文字对应一种<code>0</code> 和<code>1</code>的排列组合不就可以了？</p>
@@ -997,6 +1003,53 @@ var _hmt = _hmt || [];
 <p>注：**+25**是因为有26个连续字母，大写字母和小写字母并不是连续排列的</p>
 <h5 id="GBK国标码-双字节码，16位二进制"><a href="#GBK国标码-双字节码，16位二进制" class="headerlink" title="GBK国标码[双字节码，16位二进制]"></a>GBK国标码[双字节码，16位二进制]</h5><p>包含汉字</p>
 <h5 id="Unicode统一码-UCS-2-双字节码，16位二进制"><a href="#Unicode统一码-UCS-2-双字节码，16位二进制" class="headerlink" title="Unicode统一码(UCS-2)[双字节码，16位二进制]"></a>Unicode统一码(UCS-2)[双字节码，16位二进制]</h5><p>包含各国语言</p>
+<h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><h5 id="bmp-bitmap-位图"><a href="#bmp-bitmap-位图" class="headerlink" title="bmp(bitmap)位图"></a>bmp(bitmap)位图</h5><p><img src="https://lxz-picture.oss-cn-shanghai.aliyuncs.com/img/202301291726461.png?x-oss-process=image/resize,p_80/format,webp/quality,q_80" alt="image-20230129172609610"></p>
+<p>这是一张分辨率为$6000\times3376$ 的$24$位真彩色位图（$24$位真彩色也可以表示成 R、G、B 三通道[即红绿蓝三通道]图片，8位/通道）</p>
+<p>它的大小该如何计算呢？<br><img src="https://lxz-picture.oss-cn-shanghai.aliyuncs.com/img/202301291731105.png?x-oss-process=image/resize,p_80/format,webp/quality,q_80" alt="image-20230129173111017"></p>
+<p>我们把图片放大，可以看到是由一个一个像素块构成的，这里的$24$位指的就是每个像素块用24位(24bit)的数据表示</p>
+<p><img src="https://lxz-picture.oss-cn-shanghai.aliyuncs.com/img/202301291735582.png?x-oss-process=image/resize,p_80/format,webp/quality,q_80"></p>
+<blockquote>
+<p>注：16进制每一个数字是4位二进制(e.g <code>ff</code>=<code>1111 1111</code>    <code>83</code>=<code>0100 0001</code>)</p>
+</blockquote>
+<p>我们取一个像素块进行取色，发现这个像素的颜色是用<font color="#8f0000" size="6">Red:8f</font> <font color="#008000" size="6">Green:80</font> <font color="#000083" size="6">Blue:83</font><code>表示的，这里的</code>8f<code> </code>80<code> </code>83`为了方便读取是由二进制转为的16进制，因此这个像素的颜色是<font color="#8f8083" size="10">#8f8083</font></p>
+<p><img src="https://lxz-picture.oss-cn-shanghai.aliyuncs.com/img/202301291750694.png?x-oss-process=image/resize,p_80/format,webp/quality,q_80" alt="image-20230129175024591"></p>
+<p>同理，这个像素是用<font color="#fc0000" size="6">Red:fc</font> <font color="#00e700" size="6">Green:e7</font> <font color="#000082" size="6">Blue:82</font><code>表示的，这里的</code>8f8083`为了方便读取是由二进制转为的16进制</p>
+<p>因此这个像素的颜色是<font color="#fce782" size="10">#fce782</font></p>
+<p>而这里的<font color="#fce782" size="10">#fce782</font>、<font color="#8f8083" size="10">#8f8083</font>转换为原来的二进制便是</p>
+<p><font color="#fce782" size=6>1111 1100 1110 0111 1000 0010</font>(共24位二进制，24bit)</p>
+<p><font color="#8f8083" size="6">1000 1111 1000 0000 1000 0011</font>(共24位二进制，24bit)</p>
+<p>因此，我们可以得出，位图的大小就是：$像素的个数\times 每个像素占用的大小+ 图片中存储的文件头等信息占用的大小$</p>
+<p>对于这个图片[$6000\times3376$ 的$24$位真彩色位图]，我们可以计算出它的大小就是$6000\times3376\times 24bit + 其他(选择题时可以忽略不计)=486144000bit$ </p>
+<p>再进行单位换算<a href="#%E5%89%8D%E6%8F%90%E7%9F%A5%E8%AF%86">（点我复习）</a></p>
+<p>$486144000bit=\frac{486144000bit}{8}B=60768000B$</p>
+<p>$60768000B=\frac{60768000B}{1024}=59343.75KB$ </p>
+<p>$59343.75KB=\frac{59343.75KB}{1024}=57.952880859375MB$</p>
+<p>注：考试时计算不会这么恶心，如果不能整除也可以用$\div 1000$代替$\div 1024$估算</p>
+<p>注：其他信息包含文件头，图片属性信息，图片尺寸等，大约$54B=54*8=432bit$ ，注意单位换算时<code>bit(b)</code>与<code>Byte(B)</code>的区别【坑】</p>
+<blockquote>
+<p>例题：</p>
+<p>[CSP2020 普及组第一轮]现有一张分辨率为 $2048\times 1024$像素的 32 位真彩色图像。请问要存储这张图像，需要多大的存储空间？（ ）。</p>
+<p>A. 16MB<br>B. 4MB<br>C. 8MB<br>D. 2MB</p>
+<p>$\frac{2048\times1024\times32bit}{8\times1024\times1024}=8MB$</p>
+</blockquote>
+<h4 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h4><h5 id="采样"><a href="#采样" class="headerlink" title="采样"></a>采样</h5><p>在前面的前景提要中提到了音频采样的大部分知识，<a href="#%E5%89%8D%E6%99%AF%E6%8F%90%E8%A6%81">点击我查看相关知识</a>【重要】</p>
+<p>在前景中我们提到把歌声分成了50<strong>µs</strong>的切片，这个50<strong>µs</strong>是怎么确定的呢？</p>
+<blockquote>
+<p>根据奈奎斯特(Harry  Nyquist，物理学家，1889 —1976)采样定理，如果以一定时间 间隔对某个信号 $f(x)$进行采样，并且采样频率高于该信号最高频率的两倍，则采样值包 含了原信号的全部信息。<br>e.g.人最高可以发出<code>10000Hz</code>的声音[这里的<code>10000Hz</code>指的是声音的频率]，只要以大于20000Hz的频率进行采样[这里的<code>20000Hz</code>表示对声音进行切片的频率，即<code>1s</code>切片<code>20000</code>次，每<code>0.00005s</code>(50<strong>µs</strong>)进行一次切片]</p>
+<p>p.s 「切片」是一个形象的比喻，如果你不知道什么是「切片」就重新读一下前景提要ba（🙃</p>
+</blockquote>
+<h5 id="量化"><a href="#量化" class="headerlink" title="量化"></a>量化</h5><p><img src="https://lxz-picture.oss-cn-shanghai.aliyuncs.com/img/202301291842747.png?x-oss-process=image/resize,p_80/format,webp/quality,q_80" alt="image-20230129184201620"></p>
+<p>这是一首<code>96kHz/24bit</code>的高解析度音乐，其中的<code>96kHz</code>就是对声音采样(切片)的频率为96000Hz，即每秒采样<code>96000</code>次</p>
+<p>24bit则是把每个切片中的声音频率用<code>24bit</code>（24位二进制）的数据表示，这便是量化位数</p>
+<p>而这是一首双声道的音乐，时长<code>3:20</code></p>
+<p>所以这首歌的大小就是<br>$2声道\times 200s \times 96000次/秒\times 24bit+其他信息(如歌词、封面、作者，考试忽略)=921600000bit$</p>
+<p>$921600000bit=\frac{921600000bit}{8<em>1024</em>1024}MB=109.86328125MB$ </p>
+<p>因此这首歌为$109.86328125MB$</p>
+<p>如何换算？<a href="#%E5%89%8D%E6%8F%90%E7%9F%A5%E8%AF%86">点我复习</a></p>
+<p>$音乐大小=声道数\times时间(s)\times频率(Hz)\times量化位数(bit)+其他信息(考试忽略)$</p>
+<h5 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h5><p>把声音的频率转换为二进制传输存储</p>
+<p>【由模拟信息采样成=&gt;数字<strong>信息</strong>=&gt;<code>时间</code> <code>频率</code> <code>响度</code>这些数值转化为数字<strong>信号</strong>[<code>0</code> 和<code>1</code>]  进行存储传输】</p>
+<p>这个在前景提要里提到了完整的知识，<a href="#%E5%89%8D%E6%99%AF%E6%8F%90%E8%A6%81">点击我查看相关知识</a>【重要】</p>
  
       <!-- reward -->
       
