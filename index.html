@@ -299,6 +299,348 @@ var _hmt = _hmt || [];
 
     
     <article
+  id="post-Programming-SH1-IT"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/Programming-SH1-IT/"
+    >Programming-SH1-IT</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/Programming-SH1-IT/" class="article-date">
+  <time datetime="2023-02-07T15:57:34.000Z" itemprop="datePublished">2023-02-07</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">1.4k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">6 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h1 id="程序设计"><a href="#程序设计" class="headerlink" title="程序设计"></a>程序设计</h1><h2 id="认识Python语言"><a href="#认识Python语言" class="headerlink" title="认识Python语言"></a>认识Python语言</h2><h3 id="常量与变量"><a href="#常量与变量" class="headerlink" title="常量与变量"></a>常量与变量</h3><p><u><strong>常量就是可以直接使用的量</strong></u></p>
+<p>如<code>1</code> <code>100</code> <code>&quot;A&quot;</code> <code>&quot;Hello World&quot;</code>都是常量</p>
+<p>！注意，字母和字符串要用引号扩起来（不用引号扩起来计算机还以为你这是个变量叫<code>A</code></p>
+<p>常量，在程序中可以直接引用</p>
+<p>如<code>if(a==100)</code>引用了变量<code>a</code>和常量<code>100</code>，表示判断<code>a</code>是否等于<code>100</code></p>
+<p><u><strong>变量就是可以变化的量，可以对其进行运算，加减乘除等</strong></u></p>
+<ol>
+<li><p>不能以数字开头（重要！）</p>
+</li>
+<li><p>只能包含数字、字母、下划线（不能写空格！！）</p>
+</li>
+<li><p>区分大小写（重要！）</p>
+</li>
+<li><p>不能使用关键字</p>
+</li>
+</ol>
+<p>举例</p>
+<p><code>ABC=5</code>表示把<code>ABC</code>这个变量赋值为5（如果第一次出现<code>ABC</code>,程序则会自动创建变量<code>ABC</code>）</p>
+<p>此时如果我再执行<code>ABC=6</code>，<code>ABC</code>的值就会被修改成<code>6</code></p>
+<p><code>ABC</code>与<code>aBC</code>不是一个变量！</p>
+<h3 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h3><ol>
+<li><p>Number （数值）:<br>整型（int）<br>浮点型（float）：由整数部分和小数部分组成</p>
+</li>
+<li><p>String（字符串）：用单引号、双引号括起来的任意文本。</p>
+</li>
+<li><p>List（列表）：是写在方括号<code>[</code> <code>]</code>之间，用逗号分隔开的元素列表。    索引(下标)从0开始！！！！！</p>
+<p>例如定义<code>m=[6,&quot;aaa&quot;,114.51419]</code>,此时<code>m[0]=6</code> <code>m[1]=&quot;aaa&quot;</code> <code>m[2]=114.51419</code>,索引(下标)从0开始！！！！！</p>
+</li>
+</ol>
+<h3 id="运算符号"><a href="#运算符号" class="headerlink" title="运算符号"></a>运算符号</h3><h4 id="赋值运算符"><a href="#赋值运算符" class="headerlink" title="赋值运算符"></a>赋值运算符</h4><p>就是运算并辅助</p>
+<p>赋值：<code>=</code></p>
+<blockquote>
+<p>如<code>a=3 b=a</code>那么<code>b</code>就会被赋值为<code>3</code></p>
+</blockquote>
+<p>加法赋值：<code>+=</code></p>
+<blockquote>
+<p>如<code>a=1 a+=3</code>那么<code>a=a+3=1+3=4</code>，这里的<code>a+=3</code>相当于<code>a=a+3</code></p>
+</blockquote>
+<p>减法赋值：<code>-=</code></p>
+<blockquote>
+<p>如<code>a=5 a-=3</code>那么<code>a=2</code></p>
+</blockquote>
+<p>乘法赋值：<code>*=</code></p>
+<p>除法赋值：<code>/=</code></p>
+<p>求余赋值：<code>%=</code></p>
+<blockquote>
+<p>如<code>a=5 a%=4</code>，那么<code>a=a%4=5%4=1</code> </p>
+</blockquote>
+<h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><p><code>==</code> 判断是否等于（不要写成<code>=</code>!!!!!!!!）<br><code>&gt;</code>大于<br><code>&gt;=</code>大于等于<br><code>&lt;</code>小于<br><code>&lt;=</code>小于等于<br><code>!=</code>不等<br><code>a and b</code>且(a,b两个都成立才成立)<br><code>a or b</code>或(a,b两个又一个成立就成立)</p>
+<h4 id="输入输出"><a href="#输入输出" class="headerlink" title="输入输出"></a>输入输出</h4><p><code>a=input(&quot;提示信息&quot;)</code></p>
+<p>注意：此时输入的信息无论是数字还是字母都会以字符串的形式存储在变量a中，如果要将输入的信息变为蒸熟，必须在输入后增加一句<code>a=int(a)</code>,如果想转换成小数请使用<code>a=float(a)</code></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">Python <span class="number">3.11</span><span class="number">.1</span> (main, Dec <span class="number">23</span> <span class="number">2022</span>, <span class="number">09</span>:<span class="number">39</span>:<span class="number">26</span>) [Clang <span class="number">14.0</span><span class="number">.0</span> (clang<span class="number">-1400.0</span><span class="number">.29</span><span class="number">.202</span>)] on darwin</span><br><span class="line">Type <span class="string">&quot;help&quot;</span>, <span class="string">&quot;copyright&quot;</span>, <span class="string">&quot;credits&quot;</span> <span class="keyword">or</span> <span class="string">&quot;license&quot;</span> <span class="keyword">for</span> more information.</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a=input(<span class="string">&quot;请输入：&quot;</span>)</span><br><span class="line"></span><br><span class="line">请输入：</span><br><span class="line"><span class="number">1145141919810</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a+=<span class="number">1</span> <span class="comment">#尝试对a进行+1操作</span></span><br><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">TypeError: can only concatenate str (<span class="keyword">not</span> <span class="string">&quot;int&quot;</span>) to str <span class="comment">#由于a是字符串无法加减</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a=int(a) <span class="comment">#将a转换为整数</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a+=<span class="number">1</span> <span class="comment">#再加1，不报错</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(a) <span class="comment">#输出此时a的值</span></span><br><span class="line"><span class="number">1145141919811</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><code>print(a)</code> 输出变量a的值</p>
+<p><code>print(a,b)</code>输出a和b，默认以空格分割</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">Python <span class="number">3.11</span><span class="number">.1</span> (main, Dec <span class="number">23</span> <span class="number">2022</span>, <span class="number">09</span>:<span class="number">39</span>:<span class="number">26</span>) [Clang <span class="number">14.0</span><span class="number">.0</span> (clang<span class="number">-1400.0</span><span class="number">.29</span><span class="number">.202</span>)] on darwin</span><br><span class="line">Type <span class="string">&quot;help&quot;</span>, <span class="string">&quot;copyright&quot;</span>, <span class="string">&quot;credits&quot;</span> <span class="keyword">or</span> <span class="string">&quot;license&quot;</span> <span class="keyword">for</span> more information.</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a=<span class="number">114514</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b=<span class="number">1919810</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>c=<span class="string">&quot;哈哈&quot;</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>d=[<span class="number">7521</span>,<span class="string">&quot;Hello&quot;</span>,<span class="string">&quot;p&quot;</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(a)</span><br><span class="line"><span class="number">114514</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(a,b)</span><br><span class="line"><span class="number">114514</span> <span class="number">1919810</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(c)</span><br><span class="line">哈哈</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(d)</span><br><span class="line">[<span class="number">7521</span>, <span class="string">&#x27;Hello&#x27;</span>, <span class="string">&#x27;p&#x27;</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>print(a,b,c,d)</span><br><span class="line"><span class="number">114514</span> <span class="number">1919810</span> 哈哈 [<span class="number">7521</span>, <span class="string">&#x27;Hello&#x27;</span>, <span class="string">&#x27;p&#x27;</span>]</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h4><h5 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h5><p><code>for x in 列表</code></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">Python <span class="number">3.11</span><span class="number">.1</span> (main, Dec <span class="number">23</span> <span class="number">2022</span>, <span class="number">09</span>:<span class="number">39</span>:<span class="number">26</span>) [Clang <span class="number">14.0</span><span class="number">.0</span> (clang<span class="number">-1400.0</span><span class="number">.29</span><span class="number">.202</span>)] on darwin</span><br><span class="line">Type <span class="string">&quot;help&quot;</span>, <span class="string">&quot;copyright&quot;</span>, <span class="string">&quot;credits&quot;</span> <span class="keyword">or</span> <span class="string">&quot;license&quot;</span> <span class="keyword">for</span> more information.</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> x <span class="keyword">in</span> [<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]: <span class="comment">#让变量x分别循环遍历列表[0,1,2,3,4,5]中的数字</span></span><br><span class="line"><span class="meta">... </span>    print(x)</span><br><span class="line"><span class="meta">... </span></span><br><span class="line"><span class="number">0</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">4</span></span><br><span class="line"><span class="number">5</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><code>for x in range(a)</code></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Python <span class="number">3.11</span><span class="number">.1</span> (main, Dec <span class="number">23</span> <span class="number">2022</span>, <span class="number">09</span>:<span class="number">39</span>:<span class="number">26</span>) [Clang <span class="number">14.0</span><span class="number">.0</span> (clang<span class="number">-1400.0</span><span class="number">.29</span><span class="number">.202</span>)] on darwin</span><br><span class="line">Type <span class="string">&quot;help&quot;</span>, <span class="string">&quot;copyright&quot;</span>, <span class="string">&quot;credits&quot;</span> <span class="keyword">or</span> <span class="string">&quot;license&quot;</span> <span class="keyword">for</span> more information.</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">for</span> x <span class="keyword">in</span> range(<span class="number">5</span>): <span class="comment">#让变量x从0开始遍历到4(注意这里是4不是5！！！！)</span></span><br><span class="line"><span class="meta">... </span>    print(x)</span><br><span class="line"><span class="meta">... </span></span><br><span class="line"><span class="number">0</span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">4</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h5 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">Python <span class="number">3.11</span><span class="number">.1</span> (main, Dec <span class="number">23</span> <span class="number">2022</span>, <span class="number">09</span>:<span class="number">39</span>:<span class="number">26</span>) [Clang <span class="number">14.0</span><span class="number">.0</span> (clang<span class="number">-1400.0</span><span class="number">.29</span><span class="number">.202</span>)] on darwin</span><br><span class="line">Type <span class="string">&quot;help&quot;</span>, <span class="string">&quot;copyright&quot;</span>, <span class="string">&quot;credits&quot;</span> <span class="keyword">or</span> <span class="string">&quot;license&quot;</span> <span class="keyword">for</span> more information.</span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>a=<span class="number">0</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span><span class="keyword">while</span>(a&lt;=<span class="number">10</span>):<span class="comment">#只要满足a&lt;=10,就会一直执行下列语句</span></span><br><span class="line"><span class="meta">... </span>    a+=<span class="number">1</span></span><br><span class="line"><span class="meta">... </span>    print(a)</span><br><span class="line"><span class="meta">... </span></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">3</span></span><br><span class="line"><span class="number">4</span></span><br><span class="line"><span class="number">5</span></span><br><span class="line"><span class="number">6</span></span><br><span class="line"><span class="number">7</span></span><br><span class="line"><span class="number">8</span></span><br><span class="line"><span class="number">9</span></span><br><span class="line"><span class="number">10</span></span><br><span class="line"><span class="number">11</span><span class="comment"># 最后一轮a=10依旧满足条件，仍旧会执行一次a+=1，直至a=11不再&lt;=10</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="分支结构"><a href="#分支结构" class="headerlink" title="分支结构"></a>分支结构</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3> <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> a :</span><br><span class="line">	<span class="number">1</span></span><br><span class="line"><span class="keyword">if</span> b :</span><br><span class="line">	<span class="number">2</span></span><br><span class="line"><span class="keyword">if</span> c :</span><br><span class="line">	<span class="number">3</span></span><br><span class="line"><span class="keyword">if</span> f :</span><br><span class="line">	<span class="number">4</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	<span class="number">5</span></span><br></pre></td></tr></table></figure>
+
+<p>在这段代码中，前三个<code>if</code>是单独的，第四个<code>if</code>与<code>else</code>对应（要辨析清楚<code>if</code>与<code>else</code>的对应关系）</p>
+<p>举个例子，如果<code>b</code>成立而其余都不成立，那么会执行<code>3</code>和<code>5</code>（因为<code>f</code>不成立所以会执行对应的<code>else</code>情况）</p>
+<p>而如果<code>c</code>和<code>f</code>成立，其余不成立，则会执行<code>3</code>和<code>4</code>(因为<code>f</code>成立了所以不执行<code>f</code>对应的<code>else</code>)</p>
+<p>如果什么都不成立，那么会执行<code>5</code>（因为<code>f</code>不成立所以会执行对应的<code>else</code>情况）</p>
+ <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> a :</span><br><span class="line">	<span class="number">1</span></span><br><span class="line"><span class="keyword">elif</span> b :</span><br><span class="line">	<span class="number">2</span></span><br><span class="line"><span class="keyword">elif</span> c :</span><br><span class="line">	<span class="number">3</span></span><br><span class="line"><span class="keyword">elif</span> f :</span><br><span class="line">	<span class="number">4</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	<span class="number">5</span></span><br></pre></td></tr></table></figure>
+
+<p>这段代码把<code>if</code>换成了<code>elif</code>，使得这些判断连为整体</p>
+<p>举个例子，如果只有<code>a</code>成立只会执行<code>1</code></p>
+<p>如果只有<code>b</code>成立之后执行<code>2</code></p>
+<p>如果<code>a</code> <code>b</code> <code>c</code> <code>f</code>都不成立才会执行<code>else</code>中的<code>5</code></p>
+<p>但要注意由于程序从上到下执行，如果判断到<code>b</code>时成立，便会执行<code>2</code>后结束后续判断，此时即便<code>c</code> <code>f</code> 成立也不会执行<code>3</code> <code>4</code></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/" rel="tag">信息技术</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%80%BB%E7%BB%93/" rel="tag">总结</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/" rel="tag">程序设计</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%80%83%E8%AF%95/" rel="tag">考试</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%AB%98%E4%B8%80/" rel="tag">高一</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
+  id="post-Algorithm-SH1-IT"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/Algorithm-SH1-IT/"
+    >算法基础</a> 
+</h2>
+ 
+
+    </header>
+     
+    <div class="article-meta">
+      <a href="/Algorithm-SH1-IT/" class="article-date">
+  <time datetime="2023-02-02T09:42:03.000Z" itemprop="datePublished">2023-02-02</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">2.1k</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">7 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>为了使用计算机帮助我们解决问题，我们需要设计算法，根据算法选用适当的语言编写程序，将程序<code>解释/编译</code>成为二进制指令，再由计算机执行这些二进制指令。</p>
+<h1 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h1><h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><h4 id="【深基3-例3】闰年判断"><a href="#【深基3-例3】闰年判断" class="headerlink" title="【深基3.例3】闰年判断"></a>【深基3.例3】闰年判断</h4><h5 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h5><p>输入一个年份，判断这一年是否是闰年，如果是输出 $1$，否则输出 $0$。</p>
+<h5 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h5><p>输入一个正整数 $n$，表示年份。</p>
+<h5 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h5><p>输出一行。如果输入的年份是闰年则输出 $1$，否则输出 $0$。</p>
+<h5 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h5><p>数据保证，$1582 \leq n \leq 2020$ 且年份为自然数。</p>
+<p><img src="https://lxz-picture.oss-cn-shanghai.aliyuncs.com/img/202302021816291.png?x-oss-process=image/resize,p_80/format,webp/quality,q_80"></p>
+<blockquote>
+<p>注：闰年的判断方式：</p>
+<p>如果这个数能被 400整除，或者能被 4整除却不能被 100整除。那么这一年为闰年</p>
+</blockquote>
+<h2 id="算法的描述"><a href="#算法的描述" class="headerlink" title="算法的描述"></a>算法的描述</h2><h3 id="自然语言"><a href="#自然语言" class="headerlink" title="自然语言"></a>自然语言</h3><p>高情商：自然语言</p>
+<p>低情商：用人话说</p>
+<p>以<a href="#%E4%BE%8B%E9%A2%98">例题(点我回顾)</a>:判断闰年为例</p>
+<ol>
+<li>判断是否除以400余数为0</li>
+<li>判断是否除以4余数为0且除以400余数不为零</li>
+</ol>
+<h3 id="流程图"><a href="#流程图" class="headerlink" title="流程图"></a>流程图</h3><p>就是画图（</p>
+<table>
+<thead>
+<tr>
+<th><img src="https://lxz-picture.oss-cn-shanghai.aliyuncs.com/img/202302072333028.png?x-oss-process=image/resize,p_80/format,webp/quality,q_80" alt="img"></th>
+<th>开始/结束</th>
+<th>表示算法的开始或结束</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="https://lxz-picture.oss-cn-shanghai.aliyuncs.com/img/202302072333467.png?x-oss-process=image/resize,p_80/format,webp/quality,q_80" alt="img"></td>
+<td>输入/输出</td>
+<td>表示算法中变量的输入或输出</td>
+</tr>
+<tr>
+<td><img src="https://lxz-picture.oss-cn-shanghai.aliyuncs.com/img/202302072333748.png?x-oss-process=image/resize,p_80/format,webp/quality,q_80" alt="img"></td>
+<td>处理</td>
+<td>表示算法中变量的计算与赋值</td>
+</tr>
+<tr>
+<td><img src="https://lxz-picture.oss-cn-shanghai.aliyuncs.com/img/202302072333748.png?x-oss-process=image/resize,p_80/format,webp/quality,q_80" alt="img"></td>
+<td>判断</td>
+<td>表示算法中的条件判断</td>
+</tr>
+<tr>
+<td><img src="file:////private/var/folders/2r/rls6__l55fxg4kpwsd9yhx1w0000gn/T/com.kingsoft.wpsoffice.mac/wps-lixingzhi/ksohtml//wps6.png" alt="img"></td>
+<td>流程线</td>
+<td>表示算法中的流向</td>
+</tr>
+<tr>
+<td></td>
+<td>连接点</td>
+<td>表示算法中的转接</td>
+</tr>
+</tbody></table>
+<p><img src="https://lxz-picture.oss-cn-shanghai.aliyuncs.com/img/202302072309578.png?x-oss-process=image/resize,p_80/format,webp/quality,q_80" alt="image-20230207230942494"></p>
+<p>这是算法设计中主要的三种结构，对应的<a href="#%E4%BC%AA%E4%BB%A3%E7%A0%81">伪代码</a>分别为</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#顺序结构</span></span><br><span class="line">代码段<span class="number">1</span></span><br><span class="line">代码段<span class="number">2</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;在顺序结构中，程序按照从上至下的顺序执行每个语句&#x27;&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#选择结构</span></span><br><span class="line"><span class="keyword">if</span> 条件 :</span><br><span class="line">  代码段<span class="number">1</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">  代码段<span class="number">2</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;在选择结构中，如果条件成立,就选择执行代码段1.如果条件不成立，就选择执行代码段2&#x27;&#x27;&#x27;</span></span><br><span class="line">    </span><br><span class="line"><span class="comment">#循环结构</span></span><br><span class="line"><span class="keyword">while</span> 条件 :</span><br><span class="line">  代码段<span class="number">1</span></span><br><span class="line">代码段<span class="number">2</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;在while循环结构中，只要条件成立时便会无限执行缩进中的代码段1，只有当条件不再成立时才会结束循环继续往下执行下面的代码段2&#x27;&#x27;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>以<a href="#%E4%BE%8B%E9%A2%98">例题(点我回顾)</a>:判断闰年为例</p>
+<p><img src="https://lxz-picture.oss-cn-shanghai.aliyuncs.com/img/202302021843668.png?x-oss-process=image/resize,p_80/format,webp/quality,q_80"></p>
+<h3 id="伪代码"><a href="#伪代码" class="headerlink" title="伪代码"></a>伪代码</h3><p>伪代码是最接近自然语言和逻辑的描述方式</p>
+<p>以<a href="#%E4%BE%8B%E9%A2%98">例题(点我回顾)</a>:判断闰年为例</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">x=input(<span class="string">&quot;输入年份&quot;</span>)</span><br><span class="line"><span class="keyword">if</span> x%<span class="number">400</span>==<span class="number">0</span> :</span><br><span class="line">  print(<span class="number">1</span>)</span><br><span class="line"><span class="keyword">elif</span> x%<span class="number">4</span>==<span class="number">0</span> <span class="keyword">and</span> x%<span class="number">100</span>!=<span class="number">0</span> :</span><br><span class="line">  print(<span class="number">1</span>)</span><br><span class="line"><span class="keyword">else</span> :</span><br><span class="line">  print(<span class="number">0</span>)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>在代码中</p>
+<p><code>==</code> <code>!=</code>用来判断相等关系，分别代表等号和不等号</p>
+<p>而<code>=</code>用来赋值</p>
+<p>如果执行<code>a=1</code>那么<code>a</code>便会被赋值为<code>1</code></p>
+<p>而语句<code>1+1=2</code>返回<code>真</code>，<code>1+1!=2</code> 返回<code>假</code></p>
+<p>因此执行判断是一定要使用<code>==</code> <code>!=</code>！！！！！！！！！！</p>
+<p>使用<code>=</code>虽然可以运行但会结果错误！！！！</p>
+<p><code>and</code>判断是否同时为真</p>
+<p><code>or</code>则有一个为真则为真</p>
+<p><code>%</code>为取余符号，常用于判断是否能整除</p>
+<p>例如计算<code>2020%4</code>会返回0，这代表2020整除4的余数为0</p>
+<p>同理计算<code>2021%4</code>会返回1</p>
+<p>因此通过执行<code>if(a%400==0)</code>可以判断a是否能被400整除</p>
+</blockquote>
+<h3 id="补充辨析"><a href="#补充辨析" class="headerlink" title="补充辨析"></a>补充辨析</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3> <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> a :</span><br><span class="line">	<span class="number">1</span></span><br><span class="line"><span class="keyword">if</span> b :</span><br><span class="line">	<span class="number">2</span></span><br><span class="line"><span class="keyword">if</span> c :</span><br><span class="line">	<span class="number">3</span></span><br><span class="line"><span class="keyword">if</span> f :</span><br><span class="line">	<span class="number">4</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	<span class="number">5</span></span><br></pre></td></tr></table></figure>
+
+<p>在这段代码中，前三个<code>if</code>是单独的，第四个<code>if</code>与<code>else</code>对应（要辨析清楚<code>if</code>与<code>else</code>的对应关系）</p>
+<p>举个例子，如果<code>b</code>成立而其余都不成立，那么会执行<code>3</code>和<code>5</code>（因为<code>f</code>不成立所以会执行对应的<code>else</code>情况）</p>
+<p>而如果<code>c</code>和<code>f</code>成立，其余不成立，则会执行<code>3</code>和<code>4</code>(因为<code>f</code>成立了所以不执行<code>f</code>对应的<code>else</code>)</p>
+<p>如果什么都不成立，那么会执行<code>5</code>（因为<code>f</code>不成立所以会执行对应的<code>else</code>情况）</p>
+ <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> a :</span><br><span class="line">	<span class="number">1</span></span><br><span class="line"><span class="keyword">elif</span> b :</span><br><span class="line">	<span class="number">2</span></span><br><span class="line"><span class="keyword">elif</span> c :</span><br><span class="line">	<span class="number">3</span></span><br><span class="line"><span class="keyword">elif</span> f :</span><br><span class="line">	<span class="number">4</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">	<span class="number">5</span></span><br></pre></td></tr></table></figure>
+
+<p>这段代码把<code>if</code>换成了<code>elif</code>，使得这些判断连为整体</p>
+<p>举个例子，如果只有<code>a</code>成立只会执行<code>1</code></p>
+<p>如果只有<code>b</code>成立之后执行<code>2</code></p>
+<p>如果<code>a</code> <code>b</code> <code>c</code> <code>f</code>都不成立才会执行<code>else</code>中的<code>5</code></p>
+<p>但要注意由于程序从上到下执行，如果判断到<code>b</code>时成立，便会执行<code>2</code>后结束后续判断，此时即便<code>c</code> <code>f</code> 成立也不会执行<code>3</code> <code>4</code></p>
+<h2 id="-1"><a href="#-1" class="headerlink" title=""></a></h2><h2 id="课后练习"><a href="#课后练习" class="headerlink" title="课后练习"></a>课后练习</h2><p>现代生活半径的扩大和生活节奏加快使出行成本不断增长。滴滴快车应运而生，其以灵活快速的响应和经济实惠的价格为大众提供更高效、更经济、更舒适的出行服务，给人们生活带来了美好的变化。小C是滴滴快车忠实的粉丝，经常出行就提前预约，乘坐滴滴快车。小C就在思考这个滴滴快车是怎么计费的？可否用所学的Python语言也编写一个计费程序。于是小C开展了有关这个项目活动的探究。根据实际情况，回答问题。<br>（一）收集、分析数据，运用数理思维建模</p>
+<p>登录滴滴出行官网，得到了如下信息，即“滴滴快车（普通型）计价规则”：<br>小C同学19：33从“南内环恒地大厦停车场－入口”到“坞城新纪元大酒店（长风店）”乘坐滴滴快车（普通车型），里程4.1公里，时长约21分钟，按照表中的计费规则，小C同学此次出行应该支付的车费是：$车费=8+(4.1-3.3)\times1.35+(21-9)\times0.2=9.68$。</p>
+<p>（1）小C登录滴滴出行官网搜索并下载“计价规则”，所采用的数字化工具：$_____$<br>A.数字化可视化表达工具  B.信息加工工具  C.三维设计工具  D.信息检索工具</p>
+<p>（2）假设$Tot1$表示时长费，$Tot2$表示里程费，S表示实际里程，T表示实际时长，Cost表示应支付费用。运用数学解析式归纳出计费公式为：<br>如果时长超过9分钟，则Tot1=$_____$。<br>如果里程小于等于3.3公里则Tot2=$_____$，否则Tot2=$_____$。<br>应支付费用：Cost=$_____$。</p>
+<p>滴滴快车（普通型）计价规则</p>
+<p>注意：<br>1.起步价包含里程3.3公里，包含时长9分钟，里程费、时长费合计不足基础费时，直接按照基础费计费。<br>2.实时计价是基于订单服务内容（里程、时长、时段），按各种费用项定价标准计算订单价格的计价方式，实际费用由两部分里程费与时长费累加而得。</p>
+<p>（二）运用算法描述方法将问题解决步骤化<br>小C明晰了滴滴快车车费的计算方法之后，设计求解滴滴快车普通时段车费的算法，并用自然语言和流程图的方式表述出来。<br>（3）自然语言描述：<br>第一步:$_____$<br>第二步:计算时长费 $Totl$<br>第三步:计算里程费 $Tot2$<br>第四步:$_____$<br>第五步:$_____$<br>（4）画出流程图</p>
+<h1 id="计算机程序设计语言"><a href="#计算机程序设计语言" class="headerlink" title="计算机程序设计语言"></a>计算机程序设计语言</h1><p>这……还是死记罢</p>
+<table>
+<thead>
+<tr>
+<th>程序设计语言</th>
+<th></th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>机器语言</td>
+<td>就是0和1的二进制指令，可以直接被计算机运行。如<code>10110000 00001001</code>表示把加数9送到累加器AL中。</td>
+<td>能被计算机接受和执行<br />运行效率最高。</td>
+<td>程序难以理解，程序设计任务繁重，移植性差。</td>
+</tr>
+<tr>
+<td>汇编语言</td>
+<td>把这些基本指令用单词表示，需要**<u>编译成机器语言</u>**才能运行,如用<code>MOV AL,9</code>表示把加数9送到累加器AL中。</td>
+<td>针对计算机特定硬件而编制的汇编语言程序，比机器语言更容易理解了一些，效率仍十分高。</td>
+<td>不能被计算机直接运行，移植性差。</td>
+</tr>
+<tr>
+<td>高级语言</td>
+<td>把汇编语言的基本指令再组合实现加减乘除、判断、循环、函数等功能，需要翻译成汇编语言再编译成机器语言才能运行</td>
+<td>接近于数学语言或人的自然语言，易于理解，移植性好。</td>
+<td>不能被计算机直接运行。</td>
+</tr>
+</tbody></table>
+<h2 id="-2"><a href="#-2" class="headerlink" title=""></a><img src="https://lxz-picture.oss-cn-shanghai.aliyuncs.com/img/202302072332692.png?x-oss-process=image/resize,p_80/format,webp/quality,q_80" alt="img"></h2><p>下面这张图是最重点的，考试常考！</p>
+<p><img src="https://lxz-picture.oss-cn-shanghai.aliyuncs.com/img/202302072339484.png?x-oss-process=image/resize,p_80/format,webp/quality,q_80" alt="image-20230207233954435"></p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF/" rel="tag">信息技术</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%80%BB%E7%BB%93/" rel="tag">总结</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AE%97%E6%B3%95/" rel="tag">算法</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%80%83%E8%AF%95/" rel="tag">考试</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%AB%98%E4%B8%80/" rel="tag">高一</a></li></ul>
+
+    </footer>
+  </div>
+
+    
+ 
+   
+</article>
+
+    
+    <article
   id="post-Knowledge-Digitalize-SH1-IT"
   class="article article-type-post"
   itemscope
@@ -326,7 +668,7 @@ var _hmt = _hmt || [];
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">1.2k</span>
+            <span class="post-count">1.3k</span>
         </span>
     </span>
 
@@ -344,7 +686,8 @@ var _hmt = _hmt || [];
       
     <div class="article-entry" itemprop="articleBody">
        
-  <h1 id="知识与数字化"><a href="#知识与数字化" class="headerlink" title="知识与数字化"></a>知识与数字化</h1><h2 id="数据、信息、知识和智慧"><a href="#数据、信息、知识和智慧" class="headerlink" title="数据、信息、知识和智慧"></a>数据、信息、知识和智慧</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
+  <h1 id="知识与数字化"><a href="#知识与数字化" class="headerlink" title="知识与数字化"></a>知识与数字化</h1><p>注：阅读前可以在阅读器中打开侧边栏/目录/书签功能，查看文章目录，协助阅读</p>
+<h2 id="数据、信息、知识和智慧"><a href="#数据、信息、知识和智慧" class="headerlink" title="数据、信息、知识和智慧"></a>数据、信息、知识和智慧</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><ul>
 <li>数据：现实世界客观事物的符号记录。</li>
 <li>信息：经过加工处理的、具有意义的数据。（本质还是数据，只不过是有意义的数据，e.g 实验测量的电压电流数据）</li>
 <li>知识：对信息分析处理后获得的结论，反映事物的本质。（e.g 不再是数据，欧姆定律、牛顿第二定律等）</li>
@@ -715,151 +1058,6 @@ var _hmt = _hmt || [];
     <footer class="article-footer">
        
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8E%A8%E8%8D%90/" rel="tag">推荐</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-</article>
-
-    
-    <article
-  id="post-kfy-birthday"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/kfy-birthday/"
-    >lfy的105度金坷拉生日宴</a> 
-</h2>
- 
-
-    </header>
-     
-    <div class="article-meta">
-      <a href="/kfy-birthday/" class="article-date">
-  <time datetime="2021-07-07T09:47:08.000Z" itemprop="datePublished">2021-07-07</time>
-</a>   
-<div class="word_count">
-    <span class="post-time">
-        <span class="post-meta-item-icon">
-            <i class="ri-quill-pen-line"></i>
-            <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">15</span>
-        </span>
-    </span>
-
-    <span class="post-time">
-        &nbsp; | &nbsp;
-        <span class="post-meta-item-icon">
-            <i class="ri-book-open-line"></i>
-            <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">1 min</span>
-        </span>
-    </span>
-</div>
- 
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>众所周知 7月9日是lfy的生日</p>
-<h1 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h1><iframe src="//player.bilibili.com/player.html?aid=291546277&bvid=BV1if4y1L7qv&cid=365860545&page=1" scrolling="no" border="0" height=800 
-   width=900 frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
- 
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%90%8C%E5%AD%A6/" rel="tag">同学</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%90%9E%E7%AC%91/" rel="tag">搞笑</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%94%9F%E6%97%A5/" rel="tag">生日</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E9%AC%BC%E7%95%9C/" rel="tag">鬼畜</a></li></ul>
-
-    </footer>
-  </div>
-
-    
- 
-   
-</article>
-
-    
-    <article
-  id="post-geo-bio-fin"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/geo-bio-fin/"
-    >生物地理结业感想</a> 
-</h2>
- 
-
-    </header>
-     
-    <div class="article-meta">
-      <a href="/geo-bio-fin/" class="article-date">
-  <time datetime="2021-07-04T13:43:15.000Z" itemprop="datePublished">2021-07-04</time>
-</a>   
-<div class="word_count">
-    <span class="post-time">
-        <span class="post-meta-item-icon">
-            <i class="ri-quill-pen-line"></i>
-            <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">517</span>
-        </span>
-    </span>
-
-    <span class="post-time">
-        &nbsp; | &nbsp;
-        <span class="post-meta-item-icon">
-            <i class="ri-book-open-line"></i>
-            <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">1 min</span>
-        </span>
-    </span>
-</div>
- 
-    </div>
-      
-    <div class="article-entry" itemprop="articleBody">
-       
-  <h1 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h1><p>考完试：终于考完了，自我感觉良好</p>
-<p>上午查分：地理85，被家长批了</p>
-<p>中午：地理老师：“成绩有改动，可再查一下”</p>
-<p>下午：成绩+n</p>
-<p>。。。。。。</p> 
-      <a class="article-more-link" href="/geo-bio-fin/"
-        >阅读更多...</a
-      >
-       
-      <!-- reward -->
-      
-    </div>
-    
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%84%9F%E6%83%B3/" rel="tag">感想</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%80%83%E8%AF%95/" rel="tag">考试</a></li></ul>
 
     </footer>
   </div>
